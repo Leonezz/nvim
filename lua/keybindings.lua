@@ -40,12 +40,14 @@ map("n", "<leader>fg", [[<cmd>lua require('telescope.builtin').live_grep()<CR>]]
 map("n", "<leader>fb", [[<cmd>lua require('telescope.builtin').buffers()<CR>]], opt)
 map("n", "<leader>fh", [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], opt)
 map("n", "<leader>sf", [[<cmd>lua require('telescope.builtin').file_browser()<CR>]], opt)
-map("n", "<leader>/", [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find{}<CR>]], opt)
+map("n", "<leader>/", [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>]], opt)
 
 -- vista
 map("n", "<leader>tl", ":Vista!!<CR>", opt)
 map("n", "<leader>tr", ":Vista<CR>", opt)
 
+-- null-ls formatting
+map("v", "=", [[<cmd>lua vim.lsp.buf.format()<CR><ESC>]], opt)
 local pluginKeys = {}
 
 map("n", "<leader>e", ":NvimTreeToggle<CR>", opt)

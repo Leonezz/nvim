@@ -6,7 +6,7 @@ end
 
 local list_keys = require("keybindings").nvimTreeList
 nvim_tree.setup({
-	-- 不显示 git 状态图标
+	-- 显示 git 状态图标
 	git = {
 		enable = true,
 	},

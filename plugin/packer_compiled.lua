@@ -80,7 +80,7 @@ _G.packer_plugins = {
     url = "https://github.com/goolord/alpha-nvim"
   },
   ["better-escape.nvim"] = {
-    config = { "\27LJ\2\2e\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\fmapping\1\0\0\1\6\0\0\ajk\ajj\akj\akk\ahh\nsetup\18better_escape\frequire\0" },
+    config = { "\27LJ\2\ne\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\fmapping\1\0\0\1\6\0\0\ajk\ajj\akj\akk\ahh\nsetup\18better_escape\frequire\0" },
     loaded = true,
     path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/better-escape.nvim",
     url = "https://github.com/max397574/better-escape.nvim"
@@ -90,40 +90,10 @@ _G.packer_plugins = {
     path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
-  ["cmp-buffer"] = {
+  ["coc.nvim"] = {
     loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/cmp-buffer",
-    url = "https://github.com/hrsh7th/cmp-buffer"
-  },
-  ["cmp-cmdline"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
-    url = "https://github.com/hrsh7th/cmp-cmdline"
-  },
-  ["cmp-nvim-lsp"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cmp-nvim-ultisnips"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips",
-    url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
-  },
-  ["cmp-path"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/cmp-path",
-    url = "https://github.com/hrsh7th/cmp-path"
-  },
-  ["cmp-vsnip"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
-    url = "https://github.com/hrsh7th/cmp-vsnip"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
+    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
   },
   gruvbox = {
     loaded = true,
@@ -131,7 +101,7 @@ _G.packer_plugins = {
     url = "https://github.com/morhetz/gruvbox"
   },
   ["hop.nvim"] = {
-    config = { "\27LJ\2\2U\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0" },
+    config = { "\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0" },
     loaded = true,
     path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/hop.nvim",
     url = "https://github.com/phaazon/hop.nvim"
@@ -155,21 +125,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-transparent"] = {
     loaded = true,
@@ -226,21 +181,6 @@ _G.packer_plugins = {
     path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/tokyonight-vim",
     url = "https://github.com/ghifarit53/tokyonight-vim"
   },
-  ultisnips = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/ultisnips",
-    url = "https://github.com/SirVer/ultisnips"
-  },
-  ["vim-snippets"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/vim-snippets/.",
-    url = "https://github.com/honza/vim-snippets"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/vim-vsnip",
-    url = "https://github.com/hrsh7th/vim-vsnip"
-  },
   vimtex = {
     loaded = true,
     path = "/home/zhuwenq/.local/share/nvim/site/pack/packer/start/vimtex",
@@ -254,17 +194,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Runtimepath customization
-time([[Runtimepath customization]], true)
-vim.o.runtimepath = vim.o.runtimepath .. ",/home/zhuwenq/.local/share/nvim/site/pack/packer/start/vim-snippets/."
-time([[Runtimepath customization]], false)
 -- Config for: hop.nvim
 time([[Config for hop.nvim]], true)
-try_loadstring("\27LJ\2\2U\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop.nvim")
+try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop.nvim")
 time([[Config for hop.nvim]], false)
 -- Config for: better-escape.nvim
 time([[Config for better-escape.nvim]], true)
-try_loadstring("\27LJ\2\2e\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\fmapping\1\0\0\1\6\0\0\ajk\ajj\akj\akk\ahh\nsetup\18better_escape\frequire\0", "config", "better-escape.nvim")
+try_loadstring("\27LJ\2\ne\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\fmapping\1\0\0\1\6\0\0\ajk\ajj\akj\akk\ahh\nsetup\18better_escape\frequire\0", "config", "better-escape.nvim")
 time([[Config for better-escape.nvim]], false)
 
 _G._packer.inside_compile = false

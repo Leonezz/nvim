@@ -20,16 +20,16 @@ cmp.setup({
 	},
 	-- 来源
 	sources = cmp.config.sources({
-		{ name = "nvim_lsp" },
+		{ name = "coc" },
 		-- For vsnip users.
-		{ name = "vsnip" },
+		--{ name = "vsnip" },
 		-- For luasnip users.
 		-- { name = 'luasnip' },
 		--For ultisnips users.
 		-- { name = 'ultisnips' },
 		-- -- For snippy users.
 		-- { name = 'snippy' },
-	}, { { name = "buffer" }, { name = "path" } }),
+	},{ { name = "buffer" }, { name = "path" } }),
 
 	-- 快捷键
 	mapping = require("keybindings").cmp(cmp),
@@ -49,9 +49,9 @@ cmp.setup({
 
 -- Use buffer source for `/`.
 cmp.setup.cmdline("/", {
-	sources = {
-		{ name = "buffer" },
-	},
+    sources = {
+        { name = "buffer" },
+    },
 })
 
 -- Use cmdline & path source for ':'.

@@ -1,0 +1,22 @@
+{
+    "languageserver": {
+        "cmake": {
+            "command": "cmake-language-server",
+            "filetypes": ["cmake"],
+            "rootPatterns": [
+                "build/"
+            ],
+            "initializationOptions": {
+                "buildDirectory": "build"
+            }
+        },
+       "digestif": {
+            "command": "digestif",
+            "filetypes": ["tex", "plaintex", "context"]
+        },
+        "lua": {
+            "command": "lua-lsp",
+            "filetypes": ["lua"]
+        }
+    }
+}

@@ -8,7 +8,7 @@ return require("packer").startup(function(use)
 		requires = "kyazdani42/nvim-web-devicons",
 	})
 	--}}
-	--thames{{
+	--themes{{
 	use("ful1e5/onedark.nvim")
 	use("rmehri01/onenord.nvim")
 	use({ "catppuccin/nvim", as = "catppuccin" })
@@ -29,10 +29,13 @@ return require("packer").startup(function(use)
 	})
 	--}}
 	--tree-sitter{{
-	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use({
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
+    })
 	--}}
 	--LSP{{
-	use({ "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" })
+--	use({ "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" })
 	--}}
 	--telescope{{
 	use({
@@ -47,20 +50,20 @@ return require("packer").startup(function(use)
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
 	--}}
 	--cmp{{
-	use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
-	use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
-	use("hrsh7th/cmp-path") -- { name = 'path' }
-	use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
-	use("hrsh7th/nvim-cmp")
+	--use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
+	--use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
+	--use("hrsh7th/cmp-path") -- { name = 'path' }
+	--use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
+	--use("hrsh7th/nvim-cmp")
 	-- vsnip
-	use("hrsh7th/cmp-vsnip") -- { name = 'vsnip' }
-	use("hrsh7th/vim-vsnip")
-	use("rafamadriz/friendly-snippets")
-	use({
-		"SirVer/ultisnips",
-		requires = { { "honza/vim-snippets", rtp = "." } },
-	})
-	use("quangnguyen30192/cmp-nvim-ultisnips")
+	--use("hrsh7th/cmp-vsnip") -- { name = 'vsnip' }
+	--use("hrsh7th/vim-vsnip")
+	--use("rafamadriz/friendly-snippets")
+	--use({
+	--	"SirVer/ultisnips",
+	--	requires = { { "honza/vim-snippets", rtp = "." } },
+	--})
+	--use("quangnguyen30192/cmp-nvim-ultisnips")
 	use({
 		"max397574/better-escape.nvim",
 		config = function()
@@ -78,7 +81,6 @@ return require("packer").startup(function(use)
 	--hop{{
 	use({
 		"phaazon/hop.nvim",
-		branch = "v1",
 		config = function()
 			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
 		end,
@@ -86,5 +88,8 @@ return require("packer").startup(function(use)
 	--}
 	--vim-tex{{
 	use("lervag/vimtex")
+	--}}
+	--coc{{
+	use({ "neoclide/coc.nvim", branch = "release" })
 	--}}
 end)
