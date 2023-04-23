@@ -25,8 +25,6 @@ map("n", "<leader>5", "5gt<ct>", opt)
 -- hop.nvim
 map("n", "<leader>w", ":HopWord<CR>", opt)
 map("n", "<leader>l", ":HopLine<CR>", opt)
--- vista.vim
-map("n", "<leader>\\", ":Vista!!<CR>", { noremap = true })
 -- mundo
 map("n", "<leader>u", ":MundoToggle<CR>", opt)
 -- fzf.vim
