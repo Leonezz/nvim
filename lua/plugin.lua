@@ -20,34 +20,42 @@ return require("packer").startup(function(use)
 	use("goolord/alpha-nvim")
 	--}}
 	--align line{{
-	use("lukas-reineke/indent-blankline.nvim")
+	use({
+		"lukas-reineke/indent-blankline.nvim",
+	})
 	--}}
 	--status bar{{
 	use({
 		"nvim-lualine/lualine.nvim",
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+		requires = {
+			"kyazdani42/nvim-web-devicons",
+			opt = true,
+		},
 	})
 	--}}
 	--tree-sitter{{
 	use({
-        "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
-    })
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
+	})
 	--}}
 	--LSP{{
---	use({ "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" })
+	--	use({ "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" })
 	--}}
 	--telescope{{
 	use({
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.0",
+		-- tag = "0.1.0",
 		--or                            , branch = '0.1.x',
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	--}}
 	--null-ls{{
-	use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+	use({
+		"jose-elias-alvarez/null-ls.nvim",
+		requires = "nvim-lua/plenary.nvim",
+	})
 	--}}
 	--cmp{{
 	--use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
@@ -66,38 +74,46 @@ return require("packer").startup(function(use)
 	--use("quangnguyen30192/cmp-nvim-ultisnips")
 	use({
 		"max397574/better-escape.nvim",
-		config = function()
-			require("better_escape").setup({
-				mapping = { "jk", "jj", "kj", "kk", "hh" },
-			})
-		end,
+		config = function() end,
 	})
 	-- lspkind
 	use("onsails/lspkind-nvim")
 	--}}
 	--code outline{{
-	use("liuchengxu/vista.vim")
+	use({
+		"liuchengxu/vista.vim",
+	})
+	--}
+	--vim-tex{{
+	use({
+		"lervag/vimtex",
+	})
 	--}}
-	--hop{{
+	--coc{{
+	use({
+		"neoclide/coc.nvim",
+		branch = "release",
+	})
+	--}}
+	--comment {{
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
+	--}}
+	--hop {{
 	use({
 		"phaazon/hop.nvim",
 		config = function()
 			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
 		end,
 	})
-	--}
-	--vim-tex{{
-	use("lervag/vimtex")
 	--}}
-	--coc{{
-	use({ "neoclide/coc.nvim", branch = "release" })
-	--}}
-  --comment {{
-  use({ 
-    "numToStr/Comment.nvim",
-    config = function()
-      require('Comment').setup()
-    end
-  })
+	--{{
+	use({
+		"wakatime/vim-wakatime",
+	})
   --}}
 end)
