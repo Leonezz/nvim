@@ -14,7 +14,7 @@ null_ls.setup({
             extra_args = { "--style", "Google" }
         }),
         bt.diagnostics.clang_check.with({
-            extra_args = { "--extra-arg-before", "-std=c++2a" }
+            extra_args = { "--extra-arg-after", "c++20" }
         }),
 
         -- python
