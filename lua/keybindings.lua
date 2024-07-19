@@ -22,27 +22,14 @@ map("n", "<leader>2", "2gt<ct>", opt)
 map("n", "<leader>3", "3gt<ct>", opt)
 map("n", "<leader>4", "4gt<ct>", opt)
 map("n", "<leader>5", "5gt<ct>", opt)
--- hop.nvim
-map("n", "<leader>w", ":HopWord<CR>", opt)
-map("n", "<leader>l", ":HopLine<CR>", opt)
+
 -- mundo
 map("n", "<leader>u", ":MundoToggle<CR>", opt)
--- fzf.vim
-map("n", ",f", ":Files<CR>", opt)
-map("n", ",q", ":Lines<CR>", opt)
-map("n", ",w", ":Rg<CR>", opt)
-map("n", ",b", ":Buffers<CR>", opt)
 
-map("n", "<leader>ff", [[<cmd>lua require('telescope.builtin').find_files()<CR>]], opt)
-map("n", "<leader>fg", [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], opt)
-map("n", "<leader>fb", [[<cmd>lua require('telescope.builtin').buffers()<CR>]], opt)
-map("n", "<leader>fh", [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], opt)
-map("n", "<leader>sf", [[<cmd>lua require('telescope.builtin').file_browser()<CR>]], opt)
-map("n", "<leader>/", [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>]], opt)
 
--- vista
-map("n", "<leader>tl", ":Vista!!<CR>", opt)
-map("n", "<leader>tr", ":Vista<CR>", opt)
+
+
+
 
 -- null-ls formatting
 map("v", "=", [[<cmd>lua vim.lsp.buf.format()<CR><ESC>]], opt)
