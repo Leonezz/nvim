@@ -19,3 +19,7 @@ require("plugin-config/vista")
 require("plugin-config/vim-tex")
 
 require("colorscheme")
+
+require("plugin-config/aerial")
+require("plugin-config/blamer")
+require("plugin-config/bufferline")

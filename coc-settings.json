@@ -1,5 +1,20 @@
 {
     "languageserver": {
+        "clangd": {
+          "enabled": true,
+          "arguments": [
+             "--background-index",
+             "-j=12",
+             "--query-driver=clang++",
+             "--clang-tidy",
+             "--all-scopes-completion",
+             "--completion-style=detailed",
+             "--header-insertion=iwyu"
+          ],
+          "fallbackFlags": [
+            "-std=c++2a"
+          ]
+        },
         "cmake": {
             "command": "cmake-language-server",
             "filetypes": ["cmake"],

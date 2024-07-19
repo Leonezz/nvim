@@ -15,6 +15,26 @@ require("lazy").setup({
 	--{{packer manager
   { "wbthomason/packer.nvim" },
 	--}}
+  --{{ blamer for git blame
+  { "APZelos/blamer.nvim" },
+  --}}
+  --{{ bufferline for tab buffers
+  {
+    "akinsho/bufferline.nvim",
+    version = "*",
+    dependencies = "nvim-tree/nvim-web-devicons"
+  },
+  --}}
+  --{{ aerial for file outline
+  {
+    "stevearc/aerial.nvim",
+    opts = {},
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons"
+    },
+  },
+  --}}
 	--file tree{{
 	{
 		"kyazdani42/nvim-tree.lua",
@@ -122,5 +142,13 @@ require("lazy").setup({
 	{
 		"wakatime/vim-wakatime",
 	},
+  --}}
+  --{{
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  }
   --}}
 })
